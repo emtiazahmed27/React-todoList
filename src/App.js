@@ -17,9 +17,13 @@ function App() {
       title: todoTitle
     }
 
-    setTodoList([newTodo
-      , ...todoList])
-    setTodoTitle("");
+    if(todoTitle){
+      {setTodoList([newTodo
+        , ...todoList])
+      setTodoTitle("");}
+    }else{
+      alert("Wrong Input");
+    }
   }
 
   const editHandler= (id) => {
@@ -30,12 +34,20 @@ function App() {
     setEditableTodo(toBeEdited);
     setTodoTitle(toBeEdited.title);
   }
+
   const updateHandler= (event) =>{
     event.preventDefault()
-    editableTodo.title= todoTitle;
-    setTodoTitle("")
-    setEditable(false);
-    setEditableTodo(null);
+    if(todoTitle){
+      editableTodo.title= todoTitle;
+      setTodoTitle("")
+      setEditable(false);
+      setEditableTodo(null);
+    }else{
+      alert("Input field can't be empty")
+      setTodoTitle("")
+      setEditable(false);
+      setEditableTodo(null);
+    }
   }
 
   const deleteHandler= (id) =>{
