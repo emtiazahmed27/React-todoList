@@ -1,5 +1,82 @@
+/* utility */
+.blueBtn {
+  padding: 5px 5px;
+  background-color: #7ed6df;
+  outline: none;
+  border-radius: 5px;
+  border: 3px solid #7ed6df;
+  color: white;
+}
+
+.redButn {
+  padding: 5px 5px;
+  background-color: #ff7979;
+  outline: none;
+  border-radius: 5px;
+  border: 3px solid #ff7979;
+  color: white;
+}
+
+.pinkBtn {
+  padding: 5px 5px;
+  background-color: #e056fd;
+  outline: none;
+  border-radius: 5px;
+  border: 3px solid #e056fd;
+  color: white;
+}
+
+/* maindesign */
 .App {
   text-align: center;
+}
+
+.App #input {
+  outline: none;
+  margin: 0px 10px 0px 0px;
+  padding: 5px 5px;
+  border-radius: 0.2rem;
+  border: 2px solid #535c68;
+  width: 250px;
+  background-color: #95afc0;
+  color: white;
+}
+
+.App #input::placeholder {
+  color: white;
+}
+
+.App .addBtn {
+  margin: 0px 10px 0px 60px;
+}
+
+.App ul {
+  padding: 1rem;
+  list-style: none;
+  padding-left: 0;
+  background-color: #dff9fb;
+}
+
+.App ul li {
+  list-style: none;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App ul li p {
+  width: 250px;
+  height: 22px;
+  border: 2px solid #ff7979;
+  border-radius: 0.2rem;
+  background-color: #130f40;
+  color: white;
+  padding: 0.2rem;
+}
+
+.App ul li .editBtn {
+  margin: 0px 10px 0px 50px;
 }
 
 .App-logo {
